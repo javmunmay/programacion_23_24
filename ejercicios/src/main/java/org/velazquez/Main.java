@@ -1,4 +1,4 @@
-package org.example;
+package org.velazquez;
 
 import java.util.Scanner;
 
