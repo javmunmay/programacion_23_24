@@ -7,14 +7,14 @@ public class ejercicio5 {
 
         System.out.println("Introduce una temperatura en grados centígrados: ");
         Scanner teclado = new Scanner(System.in);
-        int numero1 =teclado.nextInt();
+        int grados =teclado.nextInt();
 
         //Fahrenheit equivalen (F = 9*C/5 + 32).
         //(0 °C × 9 / 5) + 32 = 32F
 
-        int solucionfah = (numero1*9/5)+32;
+        double solucionfah =  (double)(grados*9/5)+32;
 
-        System.out.println(numero1 + " grados son: " + solucionfah + " fahrenheit");
+        System.out.println(grados + " grados son: " + solucionfah + " fahrenheit");
 
 
 

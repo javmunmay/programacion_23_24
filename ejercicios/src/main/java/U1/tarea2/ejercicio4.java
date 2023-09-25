@@ -7,13 +7,13 @@ public class ejercicio4 {
 
         System.out.println("Introduce la longitud en millas: ");
         Scanner teclado = new Scanner(System.in);
-        int numero1 =teclado.nextInt();
+        int millas =teclado.nextInt();
 
         //(1 milla = 1609 m).
 
-        int solucionmetros = numero1*1609;
+        int solucionmetros = millas*1609;
 
-        System.out.println(numero1 + " millas son: " + solucionmetros + " metros");
+        System.out.println(millas + " millas son: " + solucionmetros + " metros");
 
 
 
