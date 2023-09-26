@@ -12,7 +12,7 @@ public class ejercicio5 {
 
         Date hora = new Date();
         System.out.println("La hora actual es: " + hora);
-        
+
 
     }
 }
