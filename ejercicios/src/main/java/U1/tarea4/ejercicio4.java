@@ -13,13 +13,10 @@ public class ejercicio4 {
 
         System.out.println("Introduce un numero decimal: ");
 
-        double numeroDecimal =teclado.nextDouble();
-
-        int numeroRedondeado = (int) Math.round(numeroDecimal);
+        double numeroDecimal = teclado.nextDouble();
 
         //Resultado redondeo
-        System.out.println("El numero redondeado es: "+numeroRedondeado);
-
+        System.out.println("El numero redondeado es: " + Math.round(numeroDecimal));
 
 
     }

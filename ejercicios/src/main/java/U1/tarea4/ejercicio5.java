@@ -1,5 +1,7 @@
 package U1.tarea4;
 
+import java.util.Date;
+
 import java.time.LocalDateTime;
 
 public class ejercicio5 {
@@ -8,9 +10,9 @@ public class ejercicio5 {
 
         //Escribe un programa que muestre la hora actual
 
-        LocalDateTime horaLocal = LocalDateTime.now();
-
-        System.out.println("La hora actual es: "+ horaLocal);
+        Date hora = new Date();
+        System.out.println("La hora actual es: " + hora);
+        
 
     }
 }

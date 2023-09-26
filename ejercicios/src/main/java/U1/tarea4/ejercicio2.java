@@ -11,16 +11,15 @@ public class ejercicio2 {
 
         System.out.println("Introduce la primera nota: ");
         Scanner teclado = new Scanner(System.in);
-        int numero1 =teclado.nextInt();
+        int numero1 = teclado.nextInt();
 
         System.out.println("Introduce la segunda nota: ");
-        int numero2 =teclado.nextInt();
+        int numero2 = teclado.nextInt();
 
 
-        double solucion = (numero1 + numero2)/2.0;
+        double solucion = (numero1 + numero2) / 2.0;
 
         System.out.println("La nota media es un: " + solucion);
-
 
 
     }

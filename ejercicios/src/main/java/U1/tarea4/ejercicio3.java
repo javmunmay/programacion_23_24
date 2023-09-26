@@ -12,19 +12,22 @@ public class ejercicio3 {
 
         System.out.println("Introduce la primera nota: ");
         Scanner teclado = new Scanner(System.in);
-        double numero1 =teclado.nextDouble();
+        double numero1 = teclado.nextDouble();
 
         System.out.println("Introduce la segunda nota: ");
-        double numero2 =teclado.nextDouble();
-
+        double numero2 = teclado.nextDouble();
 
         System.out.println("Introduce la tercera nota: ");
-        double numero3 =teclado.nextDouble();
+        double numero3 = teclado.nextDouble();
 
-        int solucion = (int) ((numero1 + numero2 + numero3)/3.0);
 
-        System.out.println("La nota media es un: " + solucion);
+        double solucion = (double) (numero1 + numero2 + numero3);
 
+        System.out.println("Resultado de la suma: " + solucion);
+
+        int media = (int) solucion;
+
+        System.out.println("La nota media es un: " + media / 3.0);
 
 
     }

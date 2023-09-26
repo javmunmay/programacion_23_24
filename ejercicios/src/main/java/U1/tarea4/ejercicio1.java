@@ -12,16 +12,12 @@ public class ejercicio1 {
 
         short valorMaximo = 32767;
 
-        System.out.println("Valor máximo de una variable de tipo short: "+valorMaximo);
+        System.out.println("Valor máximo de una variable de tipo short: " + valorMaximo);
 
         valorMaximo++;
 
-        System.out.println("Valor máximo más 1 es igual a: "+valorMaximo);
+        System.out.println("Valor máximo más 1 es igual a: " + valorMaximo);
 
-
-
-
-
-
+        //identar es cntrl+alt+l
     }
 }
