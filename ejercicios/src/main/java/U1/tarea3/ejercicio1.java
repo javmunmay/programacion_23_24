@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class ejercicio1 {
     public static void main(String[] args) {
         //Crea un programa que calcule y muestre la suma de dos números de dos cifras (de tipo byte) que introduzca el usuario.
+        Scanner teclado = new Scanner(System.in);
 
         System.out.println("Introduce el primer numero de dos cifras: ");
-        Scanner teclado = new Scanner(System.in);
         byte numero1 =teclado.nextByte();
 
         System.out.println("Introduce el segundo numero de dos cifras: ");
@@ -17,7 +17,7 @@ public class ejercicio1 {
         int solucion = numero1 + numero2;
 
         System.out.println("El resultado de la suma es: " + solucion);
-
+        // + es concatenar
 
 
     }

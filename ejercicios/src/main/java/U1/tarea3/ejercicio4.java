@@ -9,15 +9,16 @@ public class ejercicio4 {
         // calcule su equivalencia en kilómetros, usando datos de tipo float
         // (1 milla = 1.609 km).
 
-        System.out.println("Introduce una longitud en millas: ");
         Scanner teclado = new Scanner(System.in);
-        float numero1 = teclado.nextFloat();
+
+        System.out.println("Introduzca una longitud en millas: ");
+        int millas = teclado.nextInt();
 
         //millas a kilometros
 
-        float solkm = numero1 * 1609;
+        float solkm = millas * 1.609f;
 
-        System.out.println(numero1+ " millas son: " + solkm + " Kilometros ");
+        System.out.println(millas+ " millas son: " + solkm + " Kilometros ");
 
 
 

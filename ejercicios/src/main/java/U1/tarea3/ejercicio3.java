@@ -8,8 +8,9 @@ public class ejercicio3 {
         // Crea un programa que calcule y muestre la división de dos números
         // reales de doble precisión introducidos por el usuario.
 
-        System.out.println("Introduce un numero: ");
         Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Introduce un numero: ");
         double numero1 =teclado.nextDouble();
 
         System.out.println("Introduce otro numero: ");
