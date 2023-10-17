@@ -1,5 +1,7 @@
 package U1.tarea5b;
 
+import java.util.Scanner;
+
 public class ejercicio18 {
     public static void main(String[] args) {
 
@@ -25,6 +27,29 @@ public class ejercicio18 {
         //Nota del segundo control: 3
         //¿Cuál ha sido el resultado de la recuperación? (apto/no apto): no apto
         //Tu nota de Programación es 4.5
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Introduce la primera nota: ");
+        double nota1 = teclado.nextDouble();
+        System.out.println("Introduce la segunda nota: ");
+        double nota2 = teclado.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        if (media >= 5) {
+            System.out.println("Tu nota media es: " + media);
+        } else {
+            System.out.println("¿Cuál ha sido el resultado de la recuperación? (apto/no apto): ");
+            String resultadoRecuperacion = teclado.next();
+
+            if (resultadoRecuperacion.equals("apto")) {
+                System.out.println("Tu nota de Programación es 5");
+            } else {
+                System.out.println("Tu nota de Programación es: " + media);
+            }
+
+        }
 
 
     }

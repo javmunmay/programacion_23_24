@@ -1,2 +1,4 @@
-package U1.tarea6;public class ejercicio5 {
+package U1.tarea6;
+
+public class ejercicio5 {
 }

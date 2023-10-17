@@ -1,5 +1,7 @@
 package U1.tarea5b;
 
+import java.util.Scanner;
+
 public class ejercicio20 {
     public static void main(String[] args) {
 
@@ -24,6 +26,26 @@ public class ejercicio20 {
         //Cód. promo. (mitad): -13.75
         //TOTAL
         //13.75
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Introduzca la base imponible: ");
+        double baseImponible = teclado.nextDouble();
+
+        System.out.println("Introduzca el tipo de IVA (general, reducido o superreducido): ");
+        String tipoIva = teclado.next();
+
+        double cantIva = 0;
+
+        if (tipoIva.equals("general")) {
+            cantIva = 21;
+        } else if (tipoIva.equals("reducido")) {
+            cantIva = 10;
+        } else if (tipoIva.equals("superreducido")) {
+            cantIva = 4;
+
+            
+        }
 
 
     }
