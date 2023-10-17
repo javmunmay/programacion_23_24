@@ -9,7 +9,7 @@ public class ejercicio6 {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Programa para calcular la nota media de tres notas: ");
-        
+
         System.out.println("Introduzca la primera nota: ");
         double primeraNota = teclado.nextDouble();
 
@@ -22,7 +22,7 @@ public class ejercicio6 {
 
         double notaMedia = (primeraNota + segundaNota + terceraNota) / 3;
 
-        System.out.println("La nota media es: " + notaMedia);
+        System.out.printf("La nota media es: %.2f", notaMedia); //print f escribe con formateo
 
     }
 

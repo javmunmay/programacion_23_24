@@ -12,7 +12,7 @@ public class ejercicio6 {
 
         Scanner teclado = new Scanner(System.in);
 
-        double gravedad = 9.8;
+        final double gravedad = 9.8;
 
         System.out.println("Introduzca un tiempo (en minutos): ");
         long tiempo = teclado.nextLong();

@@ -26,14 +26,17 @@ public class ejercicio4 {
         int numeroHoras = teclado.nextInt();
 
         int sueldoSemanal;
-        
+
         if (numeroHoras <= 40) {
 
             sueldoSemanal = numeroHoras * 12;
 
         } else {
 
-            sueldoSemanal = numeroHoras * 16;
+            int horasNormales = 40;
+            int horasExtras = numeroHoras - horasNormales;
+
+            sueldoSemanal = (horasExtras * 16) + (horasNormales * 12);
 
         }
         System.out.println("El sueldo semanal que le corresponde es de: " + sueldoSemanal);
