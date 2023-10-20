@@ -61,7 +61,7 @@ public class ejercicio10 {
             resultado = num * 10;
             System.out.println(num + " * 10 = " + resultado);
 
-        } while (num <= 10);
+        } while (true);
 
 
     }
