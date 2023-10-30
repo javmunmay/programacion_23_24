@@ -10,7 +10,7 @@ public class Ej5 {
         //Las vocales abiertas son a, e, o.
         //
         //Ejemplo:
-        //Entrada: cad = "Hipólito el Ánodo"
+        //Entrada: cad = "Hipólito el anodo"
         //Salida: La cantidad de espacios, haches y vocales abiertas es 9
 
         Scanner scanner = new Scanner(System.in);
