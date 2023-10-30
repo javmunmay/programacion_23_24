@@ -13,7 +13,7 @@ public class Ej1 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Dame numero, perra");
+        System.out.println("Introduce un numero: ");
 
         int altura = sc.nextInt();
 
