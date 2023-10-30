@@ -4,7 +4,7 @@ public class Ej1 {
     public static void main(String[] args) {
 
 
-        int altura = 7; // Altura de las letras
+        int altura = 5; // Altura de las letras
         int espacio = 3; // Espacio entre las letras
 
 
@@ -17,7 +17,7 @@ public class Ej1 {
                         altura / 2 && j > altura - i - 1 && j < altura + i - 1) {
                     System.out.print("*");
                 } else {
-                    System.out.print("-");
+                    System.out.print(" ");
                 }
             }
 
