@@ -5,6 +5,14 @@ import java.util.Scanner;
 public class Ej5 {
     public static void main(String[] args) {
 
+        //Dada una cadena mostrar por pantalla la cantidad de espacios, haches y vocales
+        //abiertas tiene, independientemente de que sean mayúsculas, minúsculas o acentuadas.
+        //Las vocales abiertas son a, e, o.
+        //
+        //Ejemplo:
+        //Entrada: cad = "Hipólito el Ánodo"
+        //Salida: La cantidad de espacios, haches y vocales abiertas es 9
+
         Scanner scanner = new Scanner(System.in);
 
         // Solicitar al usuario que introduzca una cadena

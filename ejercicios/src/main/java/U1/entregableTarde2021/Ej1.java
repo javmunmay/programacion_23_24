@@ -4,6 +4,20 @@ import java.util.Scanner;
 
 public class Ej1 {
     public static void main(String[] args) {
+
+        //Realiza un programa que pinte por pantalla un rombo hueco hecho con
+        //asteriscos. El programa debe pedir la altura. Se debe comprobar que la altura
+        //sea un número impar mayor o igual a 3, en caso contrario se debe mostrar un
+        //mensaje de error y volverlo a pedir hasta que sea correcto.
+        //Ejemplo:
+        //Por favor, introduzca la altura del rombo: 5
+        //  *
+        // * *
+        //*   *
+        // * *
+        //  *
+        
+
         Scanner scanner = new Scanner(System.in);
 
         // Solicitar al usuario que introduzca la altura del rombo (número impar mayor o igual a 3)

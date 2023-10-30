@@ -7,7 +7,7 @@ public class B {
         for (int i = 0; i < altura; i++) {
             for (int j = 0; j < altura; j++) {
                 // Dibujar la letra B
-                if (j == 0 || j == altura - 1 || i == 0 || i == altura - 1 || i == altura / 2) {
+                if ((j == 0 || j == altura - 1 || i == 0 || i == altura - 1 || i == altura / 2)) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
