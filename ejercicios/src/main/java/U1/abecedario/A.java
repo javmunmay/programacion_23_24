@@ -23,11 +23,22 @@ public class A {
                 System.out.print(" ");
             }
 
+            // Dibujar la letra C
+
+            for (int j = 0; j < altura; j++) {
+                // Dibujar los bordes verticales y horizontales de la letra C
+                if (j == 0 || (i == 0 || i == altura - 1)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
 
             System.out.println();
         }
-
-
     }
 
+
 }
+
+
