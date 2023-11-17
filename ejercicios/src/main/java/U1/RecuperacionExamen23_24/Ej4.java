@@ -1,5 +1,7 @@
 package U1.RecuperacionExamen23_24;
 
+import java.util.Scanner;
+
 public class Ej4 {
     public static void main(String[] args) {
 
@@ -20,11 +22,18 @@ public class Ej4 {
         //*   *
         // *   *
 
+        int altura;
 
-        int altura = 7;
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Introduce la  altura: ");
+             altura = sc.nextInt();
 
-        // Dibujar la letra X
-        System.out.println("Letra X:");
+        }while ( 0 == altura % 2 || altura<3);
+
+
+        // Dibujar la letra
+        System.out.println("Flecha: ");
         for (int i = 0; i < altura; i++) {
             for (int j = 0; j < altura; j++) {
                 // Dibujar la letra X
