@@ -6,6 +6,8 @@ public class Ej5 {
         //Piensa un poco, no hagas el algoritmo de comparación de los 3 números desde cero.
 
 
+        // int mayor = masGrande(masGrande)
+
 
     }
 }

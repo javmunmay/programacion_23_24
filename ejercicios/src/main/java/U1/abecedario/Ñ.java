@@ -1,15 +1,15 @@
 package U1.abecedario;
 
-public class G {
+public class Ñ {
     public static void main(String[] args) {
+        int altura = 7;
 
-        int altura = 7; // Altura de la letra G
-
-        // Dibujar la letra G
+        // Dibujar la letra Ñ
+        System.out.println("Letra Ñ:");
         for (int i = 0; i < altura; i++) {
             for (int j = 0; j < altura; j++) {
-                // Dibuja los bordes verticales y horizontales de la letra G
-                if ((j == 0 || j == altura - 1 && i == altura / 2) || (i == 0 || i == altura - 1) || (j == altura - 1 && i > altura / 2) || i == altura / 2 && j > altura / 2) {
+                // Dibujar los bordes verticales, la diagonal y la parte superior de la letra Ñ
+                if (j == 0 || j == altura - 1 || (i > 0 && i < altura - 1 && j == i) || (i > 0 && i < altura - 1 && j == altura - i - 1)) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
@@ -19,4 +19,3 @@ public class G {
         }
     }
 }
-
