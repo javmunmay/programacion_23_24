@@ -1,6 +1,6 @@
 package U1.abecedario;
 
-public class Ñ {
+public class NN {
     public static void main(String[] args) {
         int altura = 7;
 

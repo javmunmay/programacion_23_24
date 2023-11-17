@@ -22,7 +22,7 @@ public class Ej3 {
             case 1:
                 // Calcular área (π r² h)
                 resultado = Math.PI * Math.pow(radio, 2) * altura;
-                System.out.println("Área del cilindro: " + resultado);
+                System.out.println("Area del cilindro: " + resultado);
                 break;
             case 2:
                 // Calcular volumen (π r² h)
@@ -30,7 +30,7 @@ public class Ej3 {
                 System.out.println("Volumen del cilindro: " + resultado);
                 break;
             default:
-                System.out.println("Opción no válida. Debe ser 1 para área o 2 para volumen.");
+                System.out.println("Opcion no valida. Debe ser 1 para area o 2 para volumen.");
         }
     }
 }
