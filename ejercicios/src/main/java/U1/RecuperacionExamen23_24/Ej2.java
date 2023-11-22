@@ -40,13 +40,12 @@ public class Ej2 {
             }
 
             // Comprobamos que sea positivo
-        } while (numero <0);
+        } while (numero < 0);
 
 
         // Dividimos en dos partes
         inicio = numero / 1000;
         long fin = numero % 1000;
-
 
 
         System.out.println("Los números son " + inicio + " y " + fin);
@@ -61,9 +60,9 @@ public class Ej2 {
             cocienteI = cocienteI / 10;
         }
 
-        if (invertido == fin){
-            System.out.println("es capicua");
-        }else {
+        if (invertido == fin) {
+            System.out.println("son capicua");
+        } else {
             System.out.println("no son capicua");
         }
 
@@ -71,5 +70,5 @@ public class Ej2 {
     }
 
 
-    }
+}
 
