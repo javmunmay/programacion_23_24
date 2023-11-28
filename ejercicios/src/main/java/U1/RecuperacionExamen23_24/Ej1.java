@@ -28,21 +28,20 @@ public class Ej1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Nota del primer control: ");
-        int nota1 = sc.nextInt();
+        double nota1 = sc.nextDouble();
         System.out.println("Nota del segundo control: ");
-        int nota2 = sc.nextInt();
+        double nota2 = sc.nextDouble();
 
-        double media  = (double) (nota1 + nota2) /2;
+        double media = (nota1 + nota2) / 2;
 
 
-        if (media<5){
+        if (media < 5) {
             System.out.println("¿Cuál ha sido el resultado de la recuperación? (apto/no apto):");
             String recuperacion = sc.next();
 
-             if (recuperacion.equals("apto")){
+            if (recuperacion.equals("apto")) {
                 media = 5;
             }
-
 
 
         }
@@ -50,32 +49,25 @@ public class Ej1 {
 
         System.out.println();
 
-        System.out.print("Tu nota de programación es: "+media);
+        System.out.print("Tu nota de programación es: " + media);
 
-        if (media <5){
+        if (media < 5) {
 
             System.out.print(" - Suspenso");
 
-        }else if (media <7) {
+        } else if (media < 7) {
             System.out.print(" - Suficiente");
 
-        }else if (media <8){
+        } else if (media < 8) {
             System.out.print(" - Bien");
-        }else if (media < 10){
+        } else if (media < 10) {
             System.out.print(" - Notable");
-        }else {
+        } else {
             System.out.print(" - Sobresaliente");
         }
 
 
-
-
-
-
     }
-
-
-
 
 
 }
