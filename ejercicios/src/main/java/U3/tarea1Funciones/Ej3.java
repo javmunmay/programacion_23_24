@@ -1,6 +1,5 @@
 package U3.tarea1Funciones;
 
-import java.util.Scanner;
 
 public class Ej3 {
 
@@ -16,16 +15,16 @@ public class Ej3 {
     }
 
     public static void calcularYMostrar(int opcion, double radio, double altura) {
-        double resultado = 0;
+        double resultado;
 
         switch (opcion) {
             case 1:
-                // Calcular área (π r² h)
-                resultado = Math.PI * Math.pow(radio, 2) * altura;
+                // Calcular área de su superficie es 2π r h + 2π r².
+                resultado = 2 * Math.PI * radio * altura + 2 * Math.PI * Math.pow(radio, 2);
                 System.out.println("Area del cilindro: " + resultado);
                 break;
             case 2:
-                // Calcular volumen (π r² h)
+                // El volumen de un cilindro es π r² h
                 resultado = Math.PI * Math.pow(radio, 2) * altura;
                 System.out.println("Volumen del cilindro: " + resultado);
                 break;
