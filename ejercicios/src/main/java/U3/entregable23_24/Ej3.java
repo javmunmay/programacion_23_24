@@ -30,7 +30,6 @@ public class Ej3 {
 */
 
 
-
     public static void main(String[] args) {
 
         // Pruebas con la función cuadradoMagico
@@ -62,6 +61,7 @@ public class Ej3 {
         }
 
         // Todas las sumas igual a la referencia de antes
+        // VERIFICA LAS FILAS EMPEZANDO POR LA SEGUNDA
         for (int i = 1; i < n; i++) {
             int sumaActual = 0;
             for (int j = 0; j < n; j++) {
@@ -72,7 +72,7 @@ public class Ej3 {
             }
         }
 
-        // Ver si a suma de todas las columnas sea igual a la referencia
+        // Ver si a suma de todas las COLUMNAS sea igual a la referencia
         for (int j = 0; j < n; j++) {
             int sumaActual = 0;
             for (int[] ints : matriz) {
@@ -85,7 +85,6 @@ public class Ej3 {
 
         return true;
     }
-
 
 
 }

@@ -1,7 +1,9 @@
 package U3.entregable23_24;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
 public class Ej2 {
 
     /*
@@ -32,7 +34,6 @@ public class Ej2 {
     Probar ambas funciones en el main. Puedes crear las funciones adicionales que estimes necesarias.
 
      */
-
 
 
     public static void main(String[] args) {
@@ -82,17 +83,26 @@ public class Ej2 {
         }
 
         return Arrays.copyOf(resultado, contador);
+
+        /*
+        ¡SON APUNTES, NO HACER CASO!
+
+        return Arrays.copyOf(resultado, contador);
+        significa que se está devolviendo una copia del array resultado
+        con una longitud igual a contador.
+
+        Desglosado:
+
+        resultado: El array original que se va a copiar.
+        contador: La longitud del nuevo array será igual al valor
+        actual de contador.
+
+        Entonces, si contador es 3, por ejemplo, se devolverá un nuevo
+        array que contiene los primeros 3 elementos de resultado.
+         */
+
+
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }

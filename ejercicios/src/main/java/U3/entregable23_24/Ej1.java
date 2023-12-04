@@ -1,7 +1,9 @@
 package U3.entregable23_24;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+
 public class Ej1 {
 
     /*
@@ -53,7 +55,19 @@ public class Ej1 {
 
         int[] resultado = new int[vector.length];
         System.arraycopy(pares, 0, resultado, 0, pares.length);
-        System.arraycopy(impares, 0, resultado, pares.length, impares.length);
+        System.arraycopy(impares, 0, resultado, pares.length /* Posicion inicial */, impares.length/* Posicion final */);
+
+        /*
+        System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+
+        src: El array fuente del cual copiar elementos.
+        srcPos: La posición inicial en el array fuente desde donde comenzar a copiar.
+        dest: El array destino donde copiar los elementos.
+        destPos: La posición inicial en el array destino donde se copiarán los elementos.
+        length: El número de elementos a copiar.
+
+        */
+
 
         return resultado;
     }
