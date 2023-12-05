@@ -1,5 +1,7 @@
 package U3.examen_23_24;
 
+import java.util.Scanner;
+
 public class Ej1 {
 
     /*
@@ -25,12 +27,10 @@ public class Ej1 {
 
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
 
-        String cadena_a_adivinar = "prueba";
-
-        String[] resultadoFinalMatriz = palabraAhorcado(cadena_a_adivinar);
-
+        String[] resultadoFinalMatriz = palabraAhorcado("programacion", "------------", 'o');
 
         for (int i = 0; i < resultadoFinalMatriz.length; i++) {
 
@@ -38,15 +38,20 @@ public class Ej1 {
 
         }
 
+        System.out.println("Introduce una palabra a  adivinar: ");
+        String palabra = scanner.next();
+
+        System.out.println("Introduzca un caracter a buscar en la cadena: ");
+        String caracter = scanner.next();
+
+        //palabraAhorcado(resultadoFinalMatriz);
 
     }
-
 
     public static String [] palabraAhorcado(String cadena_a_adivinar, String resultado_parcial, char letra){
 
         cadena_a_adivinar = cadena_a_adivinar.replaceAll(" ", "");
         // Elimina los espacios
-
 
         int filas = (int) Math.ceil((double) cadena_a_adivinar.length());
         String[] matriz = new String[filas];

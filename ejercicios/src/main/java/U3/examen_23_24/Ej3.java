@@ -57,7 +57,7 @@ public class Ej3 {
         System.out.print("Introduzca el numero de columnas: ");
         int columna = scanner.nextInt();
 
-        int[][] vector = crearElVector(fila, columna); //fila era tamanno
+        int[][] vector = crearElVector(fila, columna);
 
         System.out.println("El vector original es: " + Arrays.toString(vector));
 
@@ -66,6 +66,7 @@ public class Ej3 {
     }
 
     public static int[][] crearElVector(int [][] vector) {
+
 
         int[][] vector1 = new int[fila][columna];
         Random random = new Random();

@@ -44,11 +44,7 @@ public class Ej2 {
         Scanner scanner = new Scanner(System.in);
         int posicion = scanner.nextInt();
 
-
-
-
     }
-
 
    public static int[] insertarVector (int[] vector1, int[] vector2, int posicion) {
 

@@ -61,7 +61,7 @@ public class Ej4 {
         for (int i = 0; i < cantidadletras; i++) {
 
             System.out.print("Ingrese la letra #" + (i + 1) + ": ");
-            nuevaFila[letra] = scanner.next();
+            //nuevaFila[letra] = scanner.next();
         }
 
         // Mostrar los números en el orden inverso al introducido
