@@ -1,4 +1,4 @@
-package U3.examen_23_24;
+package U3.examenU3_23_24;
 
 import java.util.Scanner;
 

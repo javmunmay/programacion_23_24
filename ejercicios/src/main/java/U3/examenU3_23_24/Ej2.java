@@ -1,9 +1,6 @@
-package U3.examen_23_24;
+package U3.examenU3_23_24;
 
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Ej2 {
 
