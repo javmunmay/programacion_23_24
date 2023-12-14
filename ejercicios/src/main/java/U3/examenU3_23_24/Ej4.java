@@ -1,5 +1,7 @@
 package U3.examenU3_23_24;
 
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ej4 {
@@ -48,38 +50,44 @@ public class Ej4 {
                 {"g", "h", "i"}
         };
 
+        String[] fila = {"j", "k", "l"};
+        int pos = 1;
 
-        int cantidadletras = 3;
-        String letra = null;
+        System.out.println(matriz1);
 
-        // Crear un array para almacenar las letras
-        char[] nuevaFila = new char[cantidadletras];
+        System.out.println();
 
-        System.out.println("Introduzca los elementos de la nueva fila de la matriz ");
+        String[][] resultado = insertarFilaEnMatriz(matriz1, fila, pos);
 
-        // Solicitar al usuario que ingrese las letras
-        for (int i = 0; i < cantidadletras; i++) {
+        mostrarMatriz(resultado);
 
-            System.out.print("Ingrese la letra #" + (i + 1) + ": ");
-            //nuevaFila[letra] = scanner.next();
-        }
-
-        // Mostrar los números en el orden inverso al introducido
-        System.out.println("\nLas letras son:");
-
-        for (int i = 0; i < cantidadletras; i++) {
-            System.out.println(nuevaFila[i]);
-
-        }
-
-        char[][] matriz = new char[3][3];
     }
 
 
-    public static String[][] insertarFilaEnMatriz(String[][] matriz, String[] fila, int pos) {
+    public static String[][] insertarFilaEnMatriz(String[][] matriz1, String[] fila, int pos) {
+
+        String[][] resultado = new String[matriz1.length + 1][matriz1[0].length]; //+1 para agregar 1 fila mas y 0 devuelve la
+        // longitud de la primera fila eso se utiliza para determinar la longitud de cada fila en la nueva matriz resultado.
 
 
-        return null;
+        int j = 0;
+        for (int i = 0; i < resultado.length; i++) {
+            if (i == pos) {
+                resultado[i] = fila;
+            } else {
+                resultado[i] = matriz1[j];
+                j++;
+            }
+        }
+
+        return resultado;
+    }
+
+    public static void mostrarMatriz(String[][] matriz) {
+        for (String[] strings : matriz) { //los dos puntos: ese bucle se repetirá tantas veces como filas tenga la matriz.
+            System.out.println(Arrays.toString(strings));
+        }
+
     }
 }
 

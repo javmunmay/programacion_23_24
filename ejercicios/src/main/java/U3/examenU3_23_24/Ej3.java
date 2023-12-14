@@ -1,10 +1,11 @@
 package U3.examenU3_23_24;
 
-import java.util.Arrays;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class Ej3 {
+
 
     /*
 
@@ -44,70 +45,116 @@ public class Ej3 {
         Mínimo de pares: 15
         Máximo de impares: 78
         Mínimo de impares: 14
-
-
-     */
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Introduzca el numero de filas: ");
-        int fila = scanner.nextInt();
-
-        System.out.print("Introduzca el numero de columnas: ");
-        int columna = scanner.nextInt();
-
-        int[][] vector = crearElVector(fila, columna);
-
-        System.out.println("El vector original es: " + Arrays.toString(vector));
-
-        int[] resultado = paresEIpares(vector);
-        System.out.println("El vector con pares al principio y luego impares es: " + Arrays.toString(resultado));
-    }
-
-    public static int[][] crearElVector(int [][] vector) {
-
-
-        int[][] vector1 = new int[fila][columna];
-        Random random = new Random();
-
-        for (int i = 0; i < vector1; i++) {
-            vector1[i] = random.nextInt(65) + 14; // Cea los numeros aleatorios entre el 14 y el 78
-        }
-
-        return vector1;
-    }
-
-    public static int[] paresEIpares(int[][] vector) {
-        int[][] pares = Arrays.stream(vector).filter(num -> num % 2 == 0).toArray();
-        int[][] impares = Arrays.stream(vector).filter(num -> num % 2 != 0).toArray();
-
-        int[] resultado = new int[vector.length];
-        System.arraycopy(pares, 0, resultado, 0, pares.length);
-        System.arraycopy(impares, 0, resultado, pares.length /* Posicion inicial */, impares.length/* Posicion final */);
-
-        /*
-        APUNTES
-
-        System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
-
-        src: El array fuente del cual copiar elementos.
-        srcPos: La posición inicial en el array fuente desde donde comenzar a copiar.
-        dest: El array destino donde copiar los elementos.
-        destPos: La posición inicial en el array destino donde se copiarán los elementos.
-        length: El número de elementos a copiar.
-
         */
 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("Introduce el número de filas: ");
+        int filas = sc.nextInt();
+
+        System.out.println("Introduce el número de columnas: ");
+        int columnas = sc.nextInt();
+
+        // Declarar e inicializar la matriz con números aleatorios
+        int[][] matriz = new int[filas][columnas];
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                matriz[i][j] = random.nextInt(65) + 14; // Números aleatorios entre 14 y 78
+            }
+        }
+
+        // Mostrar la matriz original
+        System.out.println("Matriz:");
+        mostrarMatriz(matriz);
+
+        // Crear arrays para pares e impares
+        int[] pares = obtenerNumeros(matriz, true);
+        int[] impares = obtenerNumeros(matriz, false);
+
+        // Mostrar arrays de pares e impares
+        System.out.println("\nPares:");
+        mostrarArray(pares);
+
+        System.out.println("\nImpares:");
+        mostrarArray(impares);
+
+        // Calcular y mostrar la suma, media, máximo y mínimo de pares e impares
+        mostrarEstadisticas("Pares", pares);
+        mostrarEstadisticas("Impares", impares);
+    }
+
+    // Método para mostrar la matriz
+    public static void mostrarMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Método para obtener números pares o impares de la matriz
+    public static int[] obtenerNumeros(int[][] matriz, boolean esPar) {
+        int contador = 0;
+        // Contar la cantidad de números pares o impares para determinar el tamaño del array
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if ((matriz[i][j] % 2 == 0) == esPar) {
+                    contador++;
+                }
+            }
+        }
+
+        // Crear el array para almacenar los números pares o impares
+        int[] resultado = new int[contador];
+        contador = 0; // Reiniciar el contador
+
+        // Llenar el array con los números pares o impares
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if ((matriz[i][j] % 2 == 0) == esPar) {
+                    resultado[contador] = matriz[i][j];
+                    contador++;
+                }
+            }
+        }
 
         return resultado;
     }
 
+    // Método para mostrar un array
+    public static void mostrarArray(int[] array) {
+        System.out.print("[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+    }
 
+    // Método para calcular y mostrar estadísticas
+    public static void mostrarEstadisticas(String tipo, int[] array) {
+        int suma = 0;
+        int maximo = Integer.MIN_VALUE;
+        int minimo = Integer.MAX_VALUE;
 
+        for (int numero : array) {
+            suma += numero;
+            maximo = Math.max(maximo, numero);
+            minimo = Math.min(minimo, numero);
+        }
 
+        double media = (double) suma / array.length;
 
-
-
-
+        System.out.println("Suma de " + tipo + ": " + suma);
+        System.out.println("Media de " + tipo + ": " + media);
+        System.out.println("Máximo de " + tipo + ": " + maximo);
+        System.out.println("Mínimo de " + tipo + ": " + minimo);
+    }
 }
+

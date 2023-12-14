@@ -1,5 +1,6 @@
 package U3.examenU3_23_24;
 
+
 import java.util.Scanner;
 
 public class Ej1 {
@@ -27,41 +28,41 @@ public class Ej1 {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("Introduce la palabra a adivinar:");
+        String original = sc.next();
 
-        String[] resultadoFinalMatriz = palabraAhorcado("programacion", "------------", 'o');
+        String parcial = "";
 
-        for (int i = 0; i < resultadoFinalMatriz.length; i++) {
-
-            System.out.println();
-
+        for (int i = 0; i < original.length(); i++) {
+            parcial = parcial + "-";
         }
 
-        System.out.println("Introduce una palabra a  adivinar: ");
-        String palabra = scanner.next();
+        while (!original.equals(parcial)) {
+            System.out.println("Introduzca una letra: ");
+            char letra = sc.next().charAt(0);
 
-        System.out.println("Introduzca un caracter a buscar en la cadena: ");
-        String caracter = scanner.next();
+            parcial = palabraAhorcado(original, parcial, letra);
 
-        //palabraAhorcado(resultadoFinalMatriz);
+            System.out.println(parcial);
+
+        }
 
     }
 
-    public static String [] palabraAhorcado(String cadena_a_adivinar, String resultado_parcial, char letra){
+    public static String palabraAhorcado(String original, String parcial, char letra) {
 
-        cadena_a_adivinar = cadena_a_adivinar.replaceAll(" ", "");
-        // Elimina los espacios
+        String resultado = "";
 
-        int filas = (int) Math.ceil((double) cadena_a_adivinar.length());
-        String[] matriz = new String[filas];
-        int contador = 0;
-
-        for (int i = 0; i < filas; i++) {
-
+        for (int i = 0; i < original.length(); i++) {
+            if (original.charAt(i) == letra) {
+                resultado = resultado + letra;
+            } else {
+                resultado = resultado + parcial.charAt(i);
+            }
         }
 
-        return matriz;
-
+        return resultado;
     }
 }

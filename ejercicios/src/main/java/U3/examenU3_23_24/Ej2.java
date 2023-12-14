@@ -1,5 +1,6 @@
 package U3.examenU3_23_24;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ej2 {
@@ -33,34 +34,52 @@ public class Ej2 {
     public static void main(String[] args) {
 
         int[] vector1 = {1, 2, 3, 4, 5, 6};
-
-
         int[] vector2 = {4, 9, 12, 5, 7};
+        int pos = 2;
+        int[] resultado = insertarVector(vector1, vector2, pos);
 
-        System.out.println("Introduzca una posicion: ");
-        Scanner scanner = new Scanner(System.in);
-        int posicion = scanner.nextInt();
+        System.out.println(Arrays.toString(resultado));
+
 
     }
 
-   public static int[] insertarVector (int[] vector1, int[] vector2, int posicion) {
+    public static int[] insertarVector(int[] vector1, int[] vector2, int pos) {
+        int[] resultado = new int[vector1.length + vector2.length];
 
-       if (posicion < 0) {
 
-           return vector1;
+        if (pos < 0) {
 
-       } else if (posicion > vector1.length) {
+            return vector1;
 
-           return vector2;
+        } else if (pos > vector1.length) {
 
-       } else if (posicion == vector1.length) {
+            return vector2;
 
-           return null;
+        } else {
 
-       }
-       return null;
+            int indRe = 0;
 
-   }
+            for (int i = 0; i < pos; i++) {
+
+                resultado[indRe] = vector1[i];
+                indRe++;
+            }
+
+            for (int j = 0; j < vector2.length; j++) {
+
+                resultado[indRe] = vector2[j];
+                indRe++;
+            }
+
+            for (int i = pos; i < vector1.length; i++) {
+                resultado[indRe] = vector1[i];
+                indRe++;
+            }
+
+        }
+        return resultado;
+
+    }
 
 }
 
