@@ -1,4 +1,4 @@
-package U3.examen20_21;
+package U3.examen20_21Tarde;
 
 public class Ej1 {
     /*
@@ -39,7 +39,7 @@ public class Ej1 {
 
         // Imprimir el resultado
         System.out.println("Array unidimensional generado por subcorteza:");
-        for (int num : resultado) {
+        for (int num : resultado) { //tantas filas como tenga el resultado
             System.out.print(num + " ");
         }
     }

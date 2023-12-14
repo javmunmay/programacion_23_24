@@ -1,4 +1,4 @@
-package U3.examen20_21;
+package U3.examen20_21Tarde;
 
 import java.util.Arrays;
 
@@ -37,6 +37,7 @@ public class Ej4 {
     }
 
     public static int[] convierteStringEnArray(String a) {
+
         int longitud = a.length();
 
         if (longitud == 0) {
@@ -50,8 +51,8 @@ public class Ej4 {
             arrayResultado[i] = Character.getNumericValue(caracter);
         }
 
+
         return arrayResultado;
     }
-
 
 }

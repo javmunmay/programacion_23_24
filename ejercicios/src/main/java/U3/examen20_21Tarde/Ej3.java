@@ -1,4 +1,4 @@
-package U3.examen20_21;
+package U3.examen20_21Tarde;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -58,7 +58,8 @@ public class Ej3 {
             resultado[i] = numerosCon4.get(i);
         }
 
-        return (resultado.length > 0) ? resultado : new int[]{-1};
+        return (resultado.length > 0) ? resultado : new int[]{-1}; // si el resultado no esta vacio es true si esta
+        // vacio es false y devuelve la array con el valor -1
     }
 
     // Función auxiliar para verificar si un número contiene el dígito 4
