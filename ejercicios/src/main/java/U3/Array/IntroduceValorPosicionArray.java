@@ -26,7 +26,7 @@ public class IntroduceValorPosicionArray {
         // Muestra el array original
         System.out.println("Array original:");
 
-        System.out.print("\nÍndice ");
+        System.out.print("\nIndice ");
 
         for (int i = 0; i < 12; i++) {
             System.out.printf("%4d ", i);
@@ -57,7 +57,7 @@ public class IntroduceValorPosicionArray {
         // Muestra el resultado
         System.out.println("\nArray resultado:");
 
-        System.out.print("\nÍndice ");
+        System.out.print("\nIndice ");
 
         for (int i = 0; i < 12; i++) {
             System.out.printf("%4d ", i);

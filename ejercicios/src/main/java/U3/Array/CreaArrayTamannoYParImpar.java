@@ -2,7 +2,7 @@ package U3.Array;
 
 import java.util.Scanner;
 
-public class CreaArrayTamañoYParImpar {
+public class CreaArrayTamannoYParImpar {
 
 
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class CreaArrayTamañoYParImpar {
 
         System.out.println("\nArray original:");
 
-        System.out.print("Índice ");
+        System.out.print("Indice ");
         for (int i = 0; i < a.length; i++) {
             System.out.printf("%5d", i);
         }
@@ -55,7 +55,7 @@ public class CreaArrayTamañoYParImpar {
 
         System.out.println("\n\nArray resultado:");
 
-        System.out.print("Índice ");
+        System.out.print("Indice ");
         for (int i = 0; i < r.length; i++) {
             System.out.printf("%5d", i);
         }

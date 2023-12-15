@@ -40,7 +40,7 @@ public class RelleneBidiAleatorio {
         for (columna = 0; columna < 10; columna++) {
             System.out.print("──────");
         }
-        System.out.println("┐");
+        System.out.println("");
 
         for (fila = 0; fila < 6; fila++) {
             System.out.print("  " + fila + " │");
