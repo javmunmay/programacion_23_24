@@ -21,19 +21,18 @@ public class Ej2 {
     Entonces v1 será {1,2,3,8,4,5}
      */
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int[] vector1 = {1, 2, 3, 4, 5, 6};
-        int[] vector2 = {8};
+        int vector2 = 8;
         int pos;
 
         do {
-            System.out.println("Introduzca la posicion donde introducir el nuevo valor: "+(Arrays.toString(vector2)));
+            System.out.println("Introduzca la posicion donde introducir el nuevo valor: " + vector2);
             pos = sc.nextInt();
 
-        }while (pos<0 || pos>5);
+        } while (pos < 0 || pos > 5);
 
 
         int[] resultado = insertarVector(vector1, vector2, pos);
@@ -45,17 +44,13 @@ public class Ej2 {
 
     }
 
-    public static int[] insertarVector(int[] vector1, int[] vector2, int pos) {
-        int[] resultado = new int[vector1.length + vector2.length];
+    public static int[] insertarVector(int[] vector1, int vector2, int pos) {
+        int[] resultado = new int[vector1.length + 1];
 
 
         if (pos < 0) {
 
             return vector1;
-
-        } else if (pos > vector1.length) {
-
-            return vector2;
 
         } else {
 
@@ -67,11 +62,10 @@ public class Ej2 {
                 indRe++;
             }
 
-            for (int j = 0; j < vector2.length; j++) {
 
-                resultado[indRe] = vector2[j];
-                indRe++;
-            }
+            resultado[indRe] = vector2;
+            indRe++;
+
 
             for (int i = pos; i < vector1.length; i++) {
                 resultado[indRe] = vector1[i];
@@ -84,5 +78,6 @@ public class Ej2 {
     }
 
 }
+
 
 
