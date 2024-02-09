@@ -19,29 +19,29 @@ public class Concierto {
         return nombre;
     }
 
-    public String getFecha() {
-        return fecha;
-    }
-
-    public Escenario[] getListaEscenarios() {
-        return listaEscenarios;
-    }
-
-    public int getNumEscenarios() {
-        return numEscenarios;
-    }
-
     //Setter
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getFecha() {
+        return fecha;
     }
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
+    public Escenario[] getListaEscenarios() {
+        return listaEscenarios;
+    }
+
     public void setListaEscenarios(Escenario[] listaEscenarios) {
         this.listaEscenarios = listaEscenarios;
+    }
+
+    public int getNumEscenarios() {
+        return numEscenarios;
     }
 
     public void setNumEscenarios(int numEscenarios) {
