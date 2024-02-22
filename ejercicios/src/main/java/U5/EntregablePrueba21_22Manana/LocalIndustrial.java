@@ -1,18 +1,20 @@
-package U5.EntregablePrueba21_22Mañana;
+package U5.EntregablePrueba21_22Manana;
 
-public class LocalComercial extends Local implements MostrarPrecioVenta {
+public class LocalIndustrial extends Local implements MostrarPrecioVenta {
 
-    protected String Descripcion;
 
-    public LocalComercial(int anoDeConstruccion, String direccion, int metrosCuadrados, int precio, String propietario, String descripcion) {
+    protected double consumoElectrico;
+
+    public LocalIndustrial(int anoDeConstruccion, String direccion, int metrosCuadrados, int precio, String propietario, double consumoElectrico) {
         super(anoDeConstruccion, direccion, metrosCuadrados, precio, propietario);
-        Descripcion = descripcion;
+        this.consumoElectrico = consumoElectrico;
     }
 
     @Override
     public void mostrarPrecioVenta() {
-        System.out.println("Soy una LocalComercial que me dedico: " + Descripcion + " y valgo: " + super.precio);
+        System.out.println("Soy un local Industrial con un consumo maximo " + consumoElectrico + " y valgo: " + super.precio);
     }
+
 
     public void mostrarPropiedad() {
         System.out.println("Fecha: " + java.time.LocalDate.now());
@@ -20,7 +22,7 @@ public class LocalComercial extends Local implements MostrarPrecioVenta {
         System.out.println("Año de construcción: " + super.AnoDeConstruccion);
         System.out.println("Dirección: " + super.Direccion);
         System.out.println("Metros cuadrados: " + super.MetrosCuadrados);
-        System.out.println("Descripcion: " + Descripcion);
+        System.out.println("Consumo Electrico: " + consumoElectrico);
         System.out.println("Precio: " + super.precio);
     }
 }

@@ -1,10 +1,11 @@
-package U5.EntregablePrueba21_22Mañana;
+package U5.EntregablePrueba21_22Manana;
 
 public class Propiedad {
 
     protected int AnoDeConstruccion;
     protected String Direccion;
     protected int MetrosCuadrados;
+
     protected int precio;
 
     public Propiedad(int anoDeConstruccion, String direccion, int metrosCuadrados, int precio) {

@@ -1,4 +1,4 @@
-package U5.EntregablePrueba21_22Mañana;
+package U5.EntregablePrueba21_22Manana;
 
 
 import java.util.Arrays;
@@ -14,9 +14,6 @@ public class Registro {
         this.propiedades = propiedades;
     }
 
-    //setEnergia(energia) {
-    //if () {
-    //this.energia= energia  y en el constructor le paso la energia
 
     //METODO addPropiedad(Propiedad propiedad)
 

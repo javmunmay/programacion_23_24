@@ -1,4 +1,4 @@
-package U5.EntregablePrueba21_22Mañana;
+package U5.EntregablePrueba21_22Manana;
 
 
 public class Main {
@@ -8,7 +8,7 @@ public class Main {
         Local L2 = new LocalComercial(2005, "C/Clara Breuer", 320, 340000, "Aitana", "NULL");
 
 
-        Personas P1 = new Personas("7543902F", "Juan", "Ortiz", "32441G", 2);
+        Personas P1 = new Personas("7543902F", "Juan", "Ortiz", "32441G");
         Personas[] persona = {P1};
         Vivienda V1 = new Vivienda(2002, "C/ninguna", 200, 180000, 3, 4, 4, persona);
 
@@ -28,7 +28,7 @@ public class Main {
 
         System.out.println();
 
-        P1.annadirPersona(P1);
+        V1.annadirPersona(P1);
 
         System.out.println();
 
@@ -38,6 +38,7 @@ public class Main {
 
         //R1.addPropiedad(PO1);
         //R1.eliminarPropiedad(PO1);
+
         R1.informeAntiguedad();
         R1.informeSuperficie();
 
