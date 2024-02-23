@@ -1,0 +1,23 @@
+En vez de List<> usar array y usar .add - Añadir y eliminar elementos de una array.
+
+
+Al decir que no es instanciable quiere decir que es abstract.
+
+
+Al no decir que paises (array) tamaño, poner [0] y asi se crean nulos.
+
+Arrays.copyOf() en ayadirPais
+
+Para imprimir los paises hacer toString en main
+
+Para imprimir array usar metodo mostrarPaises usar en el metodo un for(Pais i : listaPaises) y un sout ddentro imprimienda i
+
+despues de realizar el codigo hacer una prueba en el main
+
+hacer equals con insert
+
+Arrays.copyOfRange()
+
+
+
+
