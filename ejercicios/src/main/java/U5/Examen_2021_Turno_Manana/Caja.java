@@ -31,7 +31,7 @@ public class Caja {
             prendas[numPrendas - 1] = null;
             numPrendas--;
         } else {
-            System.out.println("Índice inválido para eliminar la prenda de la caja.");
+            System.out.println("Indice invalido para eliminar la prenda de la caja.");
         }
     }
 }
