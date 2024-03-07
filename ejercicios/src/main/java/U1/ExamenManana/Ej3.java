@@ -7,7 +7,7 @@ public class Ej3 {
     public static void main(String[] args) {
 
 
-        // Generar aleatoriamente el palo y la carta
+        // Generar aleatoriamente el palo y la carta.txt
         Random random = new Random();
 
         // Seleccionar aleatoriamente el palo
@@ -25,7 +25,7 @@ public class Ej3 {
             }
         }
 
-        // Seleccionar aleatoriamente la carta
+        // Seleccionar aleatoriamente la carta.txt
         int indiceCarta = random.nextInt(13);
         String cartaSeleccionada = "";
         for (int i = 0; i <= indiceCarta; i++) {

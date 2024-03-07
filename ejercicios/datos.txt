@@ -1,0 +1,2 @@
+Nombre: javier
+Edad: 22

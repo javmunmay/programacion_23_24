@@ -13,8 +13,12 @@ public class datostxt {
         System.out.print("Introduce tu edad: ");
         String edad = sc.nextLine();
 
+        String nombre_fichero = "datos.txt";
+        File f1 = new File("C:\\Users\\javi1\\programacion_23_24\\ejercicios\\src\\main\\java\\U6\\Tarea1\\Ej2\\" + nombre_fichero);
+
+
         // Escribir en el archivo datos.txt
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("datos.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(f1))) {
             writer.write("Nombre: " + nombre + "\n");
             writer.write("Edad: " + edad + "\n");
             System.out.println("Datos guardados correctamente en datos.txt.");
