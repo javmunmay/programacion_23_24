@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Traductor {
-    private Map<String, String> diccionario;I
+    private Map<String, String> diccionario;
 
     public Traductor(String nombreArchivo) {
         diccionario = new HashMap<>();
