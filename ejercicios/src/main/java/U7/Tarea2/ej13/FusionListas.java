@@ -23,7 +23,7 @@ public class FusionListas {
     public static List<Integer> fusionarListas(List<Integer> lista1, List<Integer> lista2) {
         List<Integer> fusion = new ArrayList<>();
 
-        // Índices para recorrer ambas listas
+        // indices para recorrer ambas listas
         int i = 0, j = 0;
 
         // Recorrer ambas listas y fusionar

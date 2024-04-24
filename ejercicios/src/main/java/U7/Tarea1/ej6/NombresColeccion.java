@@ -2,7 +2,7 @@ package U7.Tarea1.ej6;
 
 import java.util.*;
 
-public class NombresColección {
+public class NombresColeccion {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
