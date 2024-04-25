@@ -1,18 +1,21 @@
 package U7.Entregable2021Tarde;
 
+import java.io.Serializable;
+
 public class Alumno implements Serializable {
     private static final long serialVersionUID = 1L;
+    private static int contadorId = 1; // Contador estático para el ID
+    private int idAlumno;
     private String nombre;
     private String apellidos;
     private String dni;
-    private int idAlumno;
     private Unidad unidad;
 
-    public Alumno(String nombre, String apellidos, String dni, int idAlumno, Unidad unidad) {
+    public Alumno(String nombre, String apellidos, String dni, Unidad unidad) {
+        this.idAlumno = contadorId++; // Asignar el ID y luego incrementar el contador
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;
-        this.idAlumno = idAlumno;
         this.unidad = unidad;
     }
 
