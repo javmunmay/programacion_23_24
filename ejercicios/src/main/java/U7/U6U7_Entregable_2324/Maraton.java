@@ -22,7 +22,6 @@ public class Maraton implements Serializable{
         }
 
     }
-    
 
 
 
