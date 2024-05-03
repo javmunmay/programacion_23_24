@@ -14,6 +14,7 @@ public class Main {
         Medico medico3 = new Medico("Pedro", "Martínez", 91011, "Hospital C");
 
         // Crear pacientes
+
         Paciente paciente1 = new Paciente("Ana", 30, 65.5, true, medico1, 'A');
         Paciente paciente2 = new Paciente("Carlos", 45, 80.2, false, medico2, 'B');
         Paciente paciente3 = new Paciente("Elena", 25, 55.8, true, medico1, 'A');
