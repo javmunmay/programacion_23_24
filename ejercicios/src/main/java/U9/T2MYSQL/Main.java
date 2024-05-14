@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3336/classicmodels?user=root&password=XXXXX");
+            connection = DriverManager.getConnection("jdbc:sqlite:sampledatabase.db");
             mostrarMenu(); // Aquí se llama a algún método para mostrar el menú
         } catch (SQLException e) {
             e.printStackTrace();
@@ -23,6 +23,7 @@ public class Main {
             }
         }
     }
+
 
     public static void mostrarMenu() {
 
