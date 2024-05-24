@@ -21,7 +21,7 @@ public class DOModificado {
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element elem = (Element) nodeList.item(i);
                 Element instituto = doc.createElement("instituto");
-                instituto.setTextContent("IES VELÁZQUEZ");
+                instituto.setTextContent("IES VELAZQUEZ");
                 elem.appendChild(instituto);
             }
 
